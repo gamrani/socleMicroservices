@@ -17,11 +17,9 @@ public class AccountController {
 	@Autowired
     Environment environment;
 	
-	@Value("${example.ok}")
-	String okey;
 	@GetMapping("/")
 	public String health() {
-		return okey;
+		return "okey";
 	}
 	
 	@GetMapping("/get")
